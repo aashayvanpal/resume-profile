@@ -96,6 +96,59 @@ body{
     top: -100px;
 }
 
+
+
+
+.bubbles-container{
+    position: absolute;
+    width: 50px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    z-index: 5;
+    top:-14px;
+}
+
+#bubble1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    /* background-color: yellow; */
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 5;
+    top:-20px;
+    animation : animate-bubble1 2s infinite alternate-reverse;
+}
+
+#bubble2{
+    position: absolute;
+
+    height: 50px;
+    width: 50px;
+    /* background-color: yellow; */
+    border: 2px solid white;
+    border-radius: 50%;
+    z-index: 5;
+    top:-10px;
+    animation : animate-bubble2 1s infinite alternate-reverse ;
+
+}
+
+
+@keyframes animate-bubble1 {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+@keyframes animate-bubble2 {
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+
+
+
+
 .card{
     position: relative;
     height: 205px;
