@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+}
+body{
+    height:1000px;
+    position: relative;
+    background-color: #D4F6F8;
+}
+
+.hollow-rect{
+    position: absolute;
+    border: 2px solid #0A64BC;
+    border-radius: 10px;
+
+}
+
+#hollow-rect1{
+    height: 200px;
+    width: 90px;
+    right: 5px;
+    top: 70px;
+    animation : animate-hollow-rect1 2s infinite alternate-reverse;
+}
+
+#hollow-rect2{
+    height: 200px;
+    width: 30px;
+    right: 87px;
+    top: 120px;
+    animation : animate-hollow-rect2 1s infinite alternate-reverse;
+
+}
+
+
+/* Animation for hollow rectangles */
+@keyframes animate-hollow-rect1 {
+    
+    0%{ top: 70px; }
+    100%{ top: 200px;}
+}
+
+@keyframes animate-hollow-rect2 {
+    
+    0%{ top: 120px; }
+    100%{ top: 190px;}
+}
+
+
+
+
+
+
+
+/* media query for phone */
+@media screen and  (max-width: 411px){
+    
+}
+
+
+
+
+
+
+.header{
+    height: 60px;
+    background-color: #34BDC3;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.burger{
+    position: relative;
+    height: 60px;
+    width: 80px;
+    z-index: 5;
+    background-color: green;
+
+}
+
+.burger-rect{
+    height: 15px;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.layer1{
+    position: relative;
+    z-index: 1;
+}
+
+#banner-rec1{
+    position: absolute;
+    height: 493px;
+    width: 181px;
+    top: -100px;
+}
+
+.card{
+    position: relative;
+    height: 205px;
+    width: 184px;
+    top: 75px;
+    left:63px;
+    /* background-color: green; */
+}
+#pentagon-card{
+    position: absolute;
+    top: 80px;
+    height: 130px;
+    width: 190px;
+    z-index: 2;
+}
+
+#rectangle-card{
+    position: absolute;
+    height: 150px;
+    width: 120px;
+    left: 30px;
+    border-radius: 20px;
+    z-index: 1;
+    background-color: rgb(52 189 195 / 30%);;
+    /* background: linear-gradient(180deg, rgba(63, 198, 203, 0) 0%, #3FC6CB 100%); */
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    filter: drop-shadow(3px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#profile-card{
+    position: absolute;
+    height: 100px;
+    left: 40px;
+    top: 20px;
+    z-index: 3;
+}
+
+#card-heading1{
+    position: absolute;
+    top:120px;
+    left:20px;
+    z-index: 3;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+}
+
+#mini-rectangle-card{
+    position: absolute;
+    top:147px;
+    left:64px;
+    background-color: #E0DFDD;
+    height: 3px;
+    width: 50px;
+    z-index: 3;
+}
+
+#card-heading2{
+    position: absolute;
+    top:160px;
+    left:20px;
+    z-index: 3;
+    font-size: 12px;
+    color: #D4F6F8;
+}
+
+#banner-rec2{
+    left: 92px;
+    position: absolute;
+}
