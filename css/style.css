@@ -71,7 +71,7 @@ body{
 
 .header{
     top:-10px;
-    height: 60px;
+    height: 70px;
     background-color: #34BDC3;
     z-index: 2;
     position: relative;
@@ -79,12 +79,14 @@ body{
 }
 
 .burger{
-    position: relative;
+    position: absolute;
     top: 10px;
-    height: 60px;
     width: 80px;
     z-index: 5;
     /* background-color: green; */
+
+}
+.burger:hover{
 
 }
 .burger-rect{
@@ -257,4 +259,37 @@ body{
 #banner-rec2{
     left: 92px;
     position: absolute;
+}
+
+
+.menu-layer{
+    height: 100vh;
+    /* position: sticky; */
+    /* width: 200px; */
+    background-color: #0A64BC;
+    width: 0%;
+    z-index: 10;
+    display: none;
+    transition: all 0.8s ease;
+}
+
+
+.menu{
+    height: 1000px;
+    position: sticky;
+    width: 90%;
+    z-index: 10;
+    transition: all 0.8s ease;
+    /* background-color: yellow; */
+
+}
+
+#close-menu{
+    float: right;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-weight:bold;
+    font-size:30px;
+    color: white;
 }
