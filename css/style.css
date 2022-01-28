@@ -35,14 +35,22 @@ body{
 /* Animation for hollow rectangles */
 @keyframes animate-hollow-rect1 {
     
-    0%{ top: 70px; }
-    100%{ top: 200px;}
+    0%{ top: 70px;
+    opacity: 1;
+    }
+    100%{ top: 200px;
+        opacity: 0;
+    }
 }
 
 @keyframes animate-hollow-rect2 {
     
-    0%{ top: 120px; }
-    100%{ top: 190px;}
+    0%{ top: 120px;
+        opacity: 1;
+     }
+    100%{ top: 190px;
+        opacity: 0;
+    }
 }
 
 
@@ -62,6 +70,7 @@ body{
 
 
 .header{
+    top:-10px;
     height: 60px;
     background-color: #34BDC3;
     z-index: 2;
@@ -71,18 +80,47 @@ body{
 
 .burger{
     position: relative;
+    top: 10px;
     height: 60px;
     width: 80px;
     z-index: 5;
-    background-color: green;
+    /* background-color: green; */
 
 }
-
 .burger-rect{
-    height: 15px;
-    width: 80px;
     background-color: rgb(255, 255, 255);
+    height: 6px;
+    width: 60px;
+
 }
+
+#burger-rect{
+    height: 11px;
+    display: block;
+}
+
+
+
+#burger-rect1{
+    display: block;
+    margin: 10px;
+}
+
+
+
+#burger-rect2{
+
+    display: block;
+    margin: 10px;
+}
+
+
+
+#burger-rect3{
+    display: block;
+    margin: 10px;
+}
+
 
 .layer1{
     position: relative;
