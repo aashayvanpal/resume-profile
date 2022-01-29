@@ -4,6 +4,7 @@
 
 :root{
     --dark-blue:#0A64BC;
+    --light-blue:#34BDC3;
 }
 body{
     height:1000px;
@@ -272,6 +273,7 @@ body{
     height: 100vh;
     /* position: sticky; */
     /* width: 200px; */
+    
     background-color: var(--dark-blue);
     width: 0%;
     z-index: 10;
@@ -290,26 +292,37 @@ body{
 
 }
 
+.menu ul {
+    list-style-type:"\00BB";
+
+} 
+
 .menu ul li{
-    color: white;
+    color: rgb(255, 255, 255);
     /* background-color: red; */
     padding:30px;
     transition: 1s ease;
     font-size: 25px;
+    font-weight: bold;
     text-align: center;
 }
 
 #close-button{
     float: right;
-    height: 50px;
-    background-color: transparent;
+    height: 60px;
+    width:60px;
+    background-color: var(--light-blue);
     border: none;
     font-weight:bold;
     font-size:50px;
-    color: rgb(255, 255, 255);
+    color: var(--dark-blue);
+    /* margin-right: 10px; */
+    margin-top: 10px;
+    border-radius: 0% 0% 0% 50%;
 }
+
 #close-menu{
-    height: 50px;
+    height: 60px;
     background-color: var(--dark-blue);
 }
 
