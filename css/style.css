@@ -1,6 +1,10 @@
 *{
     margin: 0px;
 }
+
+:root{
+    --dark-blue:#0A64BC;
+}
 body{
     height:1000px;
     position: relative;
@@ -9,7 +13,7 @@ body{
 
 .hollow-rect{
     position: absolute;
-    border: 2px solid #0A64BC;
+    border: 2px solid var(--dark-blue);
     border-radius: 10px;
 
 }
@@ -259,6 +263,8 @@ body{
 #banner-rec2{
     left: 92px;
     position: absolute;
+    top:390px;
+    transform: scaleY(2);
 }
 
 
@@ -266,7 +272,7 @@ body{
     height: 100vh;
     /* position: sticky; */
     /* width: 200px; */
-    background-color: #0A64BC;
+    background-color: var(--dark-blue);
     width: 0%;
     z-index: 10;
     display: none;
@@ -284,12 +290,48 @@ body{
 
 }
 
-#close-menu{
+.menu ul li{
+    color: white;
+    /* background-color: red; */
+    padding:30px;
+    transition: 1s ease;
+    font-size: 25px;
+    text-align: center;
+}
+
+#close-button{
     float: right;
     height: 50px;
     background-color: transparent;
     border: none;
     font-weight:bold;
-    font-size:30px;
-    color: white;
+    font-size:50px;
+    color: rgb(255, 255, 255);
+}
+#close-menu{
+    height: 50px;
+    background-color: var(--dark-blue);
+}
+
+.layer2{
+    position: relative;
+    height: 1000px;
+    /* background-color: green; */
+    width: 100%;
+    top: 210px;
+    z-index: 2;
+}
+
+.info-container{
+    position: absolute;
+    height: 200px;
+    width: 80%;
+    left: 10%;
+
+    background-color: #D4F6F8;
+    border-radius: 20px;
+    border:2px solid var(--dark-blue);
+    box-shadow: 3px 4px 4px #D4F6F8;
+    z-index: 2;
+
 }
