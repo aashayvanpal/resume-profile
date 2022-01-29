@@ -338,7 +338,7 @@ body{
     z-index: 2;
 }
 
-.info-container{
+.sticky-container-main{
     position: absolute;
     height: 200px;
     width: 80%;
@@ -350,4 +350,14 @@ body{
     box-shadow: 3px 4px 4px #D4F6F8;
     z-index: 2;
 
+}
+
+
+
+#conatiner-sub{
+    position: relative;
+    right: -48px;
+    top: 381px;
+    width: 68px;
+    z-index: 1;
 }
