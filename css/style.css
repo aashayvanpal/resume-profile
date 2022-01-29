@@ -361,3 +361,27 @@ body{
     width: 68px;
     z-index: 1;
 }
+
+
+
+.sticky-container-main2{
+    position: absolute;
+    height: 120px;
+    width: 80%;
+    left: 10%;
+    top: 650px;
+    background-color: #D4F6F8;
+    border-radius: 20px;
+    border:2px solid var(--dark-blue);
+    box-shadow: 3px 4px 4px #D4F6F8;
+    z-index: 2;
+
+}
+
+#conatiner-sub2{
+    position: relative;
+    right: -52px;
+    top: 509px;
+    width: 68px;
+    z-index: 1;
+}
