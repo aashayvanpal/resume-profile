@@ -262,10 +262,10 @@ body{
 }
 
 #banner-rec2{
-    left: 92px;
+    right: 0px;
     position: absolute;
-    top:390px;
-    transform: scaleY(2);
+    top:215px;
+    height:889px;
 }
 
 
