@@ -283,11 +283,12 @@ body{
 
 
 .menu{
+    display: none;
     height: 1000px;
     position: sticky;
     width: 90%;
     z-index: 10;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
     /* background-color: yellow; */
 
 }
@@ -305,6 +306,8 @@ body{
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    transition: all 3s ease;
+
 }
 
 #close-button{
@@ -340,7 +343,7 @@ body{
     height: 200px;
     width: 80%;
     left: 10%;
-
+    top: 400px;
     background-color: #D4F6F8;
     border-radius: 20px;
     border:2px solid var(--dark-blue);

@@ -13,6 +13,7 @@ burger.addEventListener('click', function () {
     menuLayer.style.position = "absolute"
     menuLayer.style.display = "revert"
     menu.style.display = "revert"
+    // menu.style.display = "block"
 
 })
 
